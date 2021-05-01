@@ -3,7 +3,7 @@ use std::fs;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let config = pars_config(&args);
+    let config = Config::new(&args);
 
     println!("{:?}", args);
 
@@ -33,7 +33,7 @@ impl Config {
 //     let filename = args[2].clone();
 //
 //     Config {query, filename}
-}
+// }
 
 
 }
